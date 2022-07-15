@@ -1,0 +1,48 @@
+220715
+
+object 객체
+key~in는 찾겠다 여기에 어떤 오브젝트가있는지(ex- 이런 데이터가 있는데 보내드릴게요~ 했을때 어떤 데이터 인지 차즌ㄴ 법)
+
+매소드 = 함수를 집어 넣는다. 기존에 없던 정보를 매소드를 통해 집어 넣는다.
+          = 이름()괄호{}대괄호  
+
+
+this는 지금 존재해 있는 코드의 제일 위의 변수를 지칭한다.
+
+함수는 객체의 이름이 바로 온다. 또한 복합함수가 아닐경우 그냥 ()괄호로 둔다.
+
+화살표 함수(변수에 함수를 가짐 )는 this를 가지지 못한다. => 함수는 지금 코드보다 상위정보를 가지고 온다. 
+
+함수 선언문은 어디에 두든지 아무 곳에서나 불러 올 수 있다.
+
+
+
+****생성자 함수 ****
+
+function + 대문자 함수 (함수 내용)
+
+생성자 함수는 무조건 THIS를 써야한다.
+
+
+function KDT(name,gender){
+    this.name = name;
+    this.gender = gender;
+    this.showNg = function(){
+        console.log(`${this.name}는${this.gender}입니다`);
+    }
+}
+
+let person = new KDT("진형","W");
+let person1 = new KDT("소민","W");
+let person2 = new KDT("지훈","M");
+let person3 = new KDT("의진","W");
+
+person.showNg();
+person1.showNg();
+person2.showNg();
+person3.showNg();
+
+
+
+
+DOM (Document Object Model)
