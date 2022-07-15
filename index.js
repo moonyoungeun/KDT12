@@ -1,3 +1,4 @@
+//메소드 예시
 // const pororo = {
 //     height : 70,
 //     weight : 50,
@@ -45,6 +46,13 @@
 
 
 
+
+
+
+
+
+
+//생성자 함수 예시
 // function Fruits(name,price){
 //     this.name = name;
 //     this.price = price;
@@ -64,6 +72,12 @@
 // pineApple.showPrice();
 
 
+
+
+
+
+
+//생성자 함수실습
 function KDT(name,gender){
     this.name = name;
     this.gender = gender;

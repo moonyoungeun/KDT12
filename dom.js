@@ -103,42 +103,76 @@
 
 
 //실습
-let boxEl = document.querySelector(".box");
-console.log(boxEl);
+// let boxEl = document.querySelector(".box");
+// console.log(boxEl);
 
-boxEl.addEventListener("click",function(){
-    console.log (boxEl);
+// boxEl.addEventListener("click",function(){
+//     console.log (boxEl);
 
-    if(boxEl.classList.contains("orange")){
-        boxEl.classList.remove("orange");
-        boxEl.classList.add("skyblue");
-        console.log(boxEl);
-    } else if (boxEl.classList.contains("skyblue")){
-        boxEl.classList.remove("skyblue");
-        boxEl.classList.add("orange");
-        console.log(boxEl);
-    }else{
-        boxEl.classList.add("orange");
-    }
-});
+//     if(boxEl.classList.contains("orange")){
+//         boxEl.classList.remove("orange");
+//         boxEl.classList.add("skyblue");
+//         console.log(boxEl);
+//     } else if (boxEl.classList.contains("skyblue")){
+//         boxEl.classList.remove("skyblue");
+//         boxEl.classList.add("orange");
+//         console.log(boxEl);
+//     }else{
+//         boxEl.classList.add("orange");
+//     }
+// });
 
 
 
-let buttonOne = document.getElementById("button-1");
+// let buttonOne = document.getElementById("button-1");
 
-let buttonTwo = document.getElementById("button-2");
+// let buttonTwo = document.getElementById("button-2");
 
-let inputEl = document.getElementById("input");
+// let inputEl = document.getElementById("input");
 
-let spanEl = document.querySelector("span");
+// let spanEl = document.querySelector("span");
 
-buttonOne.addEventListener("click",function(){
-    inputEl.setAttribute("placeholder","아이디를 입력하세요");
-    spanEl.textContent = "아이디를 입력하세요";
+// buttonOne.addEventListener("click",function(){
+//     inputEl.setAttribute("placeholder","아이디를 입력하세요");
+//     spanEl.textContent = "아이디를 입력하세요";
+// })
+
+// buttonTwo.addEventListener("click",function(){
+//     let inputText;
+//     inputText = inputEl.value;
+//     spanEl.textContent = inputText;
+// })
+
+
+
+
+
+//querySelectorAll
+// let boxEls = document.querySelectorAll(".box");
+
+// console.log(boxEls);
+
+
+
+
+
+//forEach
+// boxEls.forEach(function(boxEl,index){
+//     boxEl.classList.add(`box_${index + 1}`);
+// })
+
+// console.log(boxEls);
+
+
+
+
+
+//실습7
+
+let boxEls = document.querySelectorAll(".box");
+
+boxEls.forEach(function(boxEl,index){
+    boxEl.classList.add(`box_${index + 1}`);
+
 })
 
-buttonTwo.addEventListener("click",function(){
-    let inputText;
-    inputText = inputEl.value;
-    spanEl.textContent = inputText;
-})
